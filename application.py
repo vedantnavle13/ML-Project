@@ -1,8 +1,12 @@
+import sys
 import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+# --- The rest of your imports go below this ---
 import pandas as pd
 import numpy as np
-import sys
 from flask import Flask,render_template,request
+# ...and so on
 
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
